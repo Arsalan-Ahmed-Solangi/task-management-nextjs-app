@@ -40,6 +40,10 @@ const Login = () => {
     try {
       validate(inputs);
       toast.success("Login successful!");
+      // Redirect to dashboard after successful login
+      setTimeout(() => {
+        router.push("/dashboard");
+      }, 500);
     } catch (err) {
       console.log(`~ERROR handleSubmit:`, err.message);
       toast.error(err.message);
