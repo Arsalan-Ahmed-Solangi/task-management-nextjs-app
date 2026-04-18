@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useState } from "react";
 import {
   Box,
@@ -13,7 +13,7 @@ import COLORS from "@/theme/colors";
 
 const navItems = [
   { label: "Dashboard", path: "/dashboard" },
-  { label: "Tasks", path: "/dashboard/tasks" },
+  { label: "Create Task", path: "/dashboard/create-task" },
   { label: "Team Members", path: "/dashboard/team" },
   { label: "Settings", path: "/dashboard/settings" },
 ];
@@ -42,7 +42,7 @@ const Navbar = () => {
         backgroundColor: COLORS.primary,
       }}
     >
-      {/* LEFT NAV */}
+      {/*  NAV */}
       <Box sx={{ display: "flex", gap: 3 }}>
         {navItems.map((item) => {
           const isActive = pathname === item.path;
@@ -84,8 +84,7 @@ const Navbar = () => {
         })}
       </Box>
 
-      {/* RIGHT PROFILE */}
-      <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+      <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
         <Avatar
           onClick={handleOpen}
           sx={{ cursor: "pointer", width: 32, height: 32 }}

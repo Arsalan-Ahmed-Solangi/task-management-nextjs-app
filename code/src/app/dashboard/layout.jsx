@@ -1,3 +1,4 @@
+"use client"
 import Navbar from "@/componenets/ui/layout/Navbar";
 import { Box } from "@mui/material";
 
